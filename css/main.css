@@ -1,0 +1,147 @@
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+    
+}
+
+/* navigation sytling begins */
+
+#header{
+    background: black;
+    font-family: Arial;
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+li{
+    float: left;
+    border-right: 1px dotted white; 
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+background-color: purple;
+
+}
+.active{
+    background-color: red;
+    
+    }
+/* navigation sytling begins */
+
+#contentcolumn{
+
+    margin: 0 230px 0 230px;
+    
+}
+#contentwrapper{
+    float:left ;
+    width: 100%;
+}
+
+
+.innertext{
+
+    margin: 20px;
+    font-family: arial;
+    color: cadetblue;
+}
+
+#leftcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    background: burlywood;
+
+}
+
+
+#rightcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -230px;
+    background: burlywood;}
+
+#footer{
+
+    clear: left;
+    width: 100%;
+    background: black;
+    color: brown;
+    padding: 4px;
+    text-align: center;
+}
+
+
+h3{
+
+    text-align: center;
+    color: tomato;
+}
+
+/* RESPONSIVE DESIGN STYLING */
+
+@media (max-width: 840px){
+
+    #leftcolumn{
+        margin-left: -100%;
+        background-color: turquoise;
+    }
+
+    #rightcolumn{
+
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+    }
+    
+    #contentcolumn{
+
+        margin-right: 0;
+
+    }
+
+
+}
+
+@media (max-width: 600px){
+
+    #leftcolumn{
+        float: none ;
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+        background-color: blueviolet;
+    }
+
+    #rightcolumn{
+
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+    }
+    
+    #contentcolumn{
+
+        margin-right: 0;
+        
+    }
+
+
+}
